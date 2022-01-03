@@ -1,0 +1,6 @@
+{
+  "airlineId": "SWR",
+  "airportId": "LSZH",
+  "regulationType": "DEPARTURE",
+  "callbackEndpoint": "http://localhost:8080/callbackEndpoint"
+}

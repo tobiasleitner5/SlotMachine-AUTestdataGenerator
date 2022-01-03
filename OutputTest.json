@@ -1,0 +1,366 @@
+[ {
+  "regulationId" : "regulation1",
+  "optimizationId" : "657aeb40-3572-4d76-82bf-a7b99a53d427",
+  "airlineId" : "SWR",
+  "flights" : [ {
+    "flightId" : "FLIGHT1558",
+    "weightMap" : [ {
+      "slotTime" : "2021-10-02 03:59",
+      "weight" : "-1000"
+    }, {
+      "slotTime" : "2021-10-02 11:50",
+      "weight" : "1000"
+    }, {
+      "slotTime" : "2021-10-02 11:55",
+      "weight" : "-5"
+    }, {
+      "slotTime" : "2021-10-02 11:59",
+      "weight" : "-22"
+    }, {
+      "slotTime" : "2021-10-02 11:59",
+      "weight" : "-22"
+    }, {
+      "slotTime" : "2021-10-02 12:00",
+      "weight" : "-26"
+    }, {
+      "slotTime" : "2021-10-02 13:00",
+      "weight" : "-270"
+    }, {
+      "slotTime" : "2021-10-02 13:59",
+      "weight" : "-511"
+    }, {
+      "slotTime" : "2021-10-02 15:00",
+      "weight" : "-759"
+    }, {
+      "slotTime" : "2021-10-02 15:59",
+      "weight" : "-1000"
+    }, {
+      "slotTime" : "2021-10-02 15:59",
+      "weight" : "-1000"
+    } ]
+  }, {
+    "flightId" : "FLIGHT1559",
+    "weightMap" : [ {
+      "slotTime" : "2021-10-02 03:59",
+      "weight" : "-1000"
+    }, {
+      "slotTime" : "2021-10-02 11:50",
+      "weight" : "-2"
+    }, {
+      "slotTime" : "2021-10-02 11:55",
+      "weight" : "1000"
+    }, {
+      "slotTime" : "2021-10-02 11:59",
+      "weight" : "0"
+    }, {
+      "slotTime" : "2021-10-02 11:59",
+      "weight" : "0"
+    }, {
+      "slotTime" : "2021-10-02 12:00",
+      "weight" : "-4"
+    }, {
+      "slotTime" : "2021-10-02 13:00",
+      "weight" : "-254"
+    }, {
+      "slotTime" : "2021-10-02 13:59",
+      "weight" : "-500"
+    }, {
+      "slotTime" : "2021-10-02 15:00",
+      "weight" : "-754"
+    }, {
+      "slotTime" : "2021-10-02 15:59",
+      "weight" : "-1000"
+    }, {
+      "slotTime" : "2021-10-02 15:59",
+      "weight" : "-1000"
+    } ]
+  }, {
+    "flightId" : "FLIGHT1561",
+    "weightMap" : [ {
+      "slotTime" : "2021-10-02 03:59",
+      "weight" : "-1000"
+    }, {
+      "slotTime" : "2021-10-02 11:50",
+      "weight" : "-10"
+    }, {
+      "slotTime" : "2021-10-02 11:55",
+      "weight" : "38"
+    }, {
+      "slotTime" : "2021-10-02 11:59",
+      "weight" : "1000"
+    }, {
+      "slotTime" : "2021-10-02 11:59",
+      "weight" : "1000"
+    }, {
+      "slotTime" : "2021-10-02 12:00",
+      "weight" : "759"
+    }, {
+      "slotTime" : "2021-10-02 13:00",
+      "weight" : "-241"
+    }, {
+      "slotTime" : "2021-10-02 13:59",
+      "weight" : "-491"
+    }, {
+      "slotTime" : "2021-10-02 15:00",
+      "weight" : "-749"
+    }, {
+      "slotTime" : "2021-10-02 15:59",
+      "weight" : "-1000"
+    }, {
+      "slotTime" : "2021-10-02 15:59",
+      "weight" : "-1000"
+    } ]
+  }, {
+    "flightId" : "FLIGHT1560",
+    "weightMap" : [ {
+      "slotTime" : "2021-10-02 03:59",
+      "weight" : "-1000"
+    }, {
+      "slotTime" : "2021-10-02 11:50",
+      "weight" : "-10"
+    }, {
+      "slotTime" : "2021-10-02 11:55",
+      "weight" : "0"
+    }, {
+      "slotTime" : "2021-10-02 11:59",
+      "weight" : "1000"
+    }, {
+      "slotTime" : "2021-10-02 11:59",
+      "weight" : "1000"
+    }, {
+      "slotTime" : "2021-10-02 12:00",
+      "weight" : "737"
+    }, {
+      "slotTime" : "2021-10-02 13:00",
+      "weight" : "-242"
+    }, {
+      "slotTime" : "2021-10-02 13:59",
+      "weight" : "-491"
+    }, {
+      "slotTime" : "2021-10-02 15:00",
+      "weight" : "-750"
+    }, {
+      "slotTime" : "2021-10-02 15:59",
+      "weight" : "-1000"
+    }, {
+      "slotTime" : "2021-10-02 15:59",
+      "weight" : "-1000"
+    } ]
+  }, {
+    "flightId" : "FLIGHT1553",
+    "weightMap" : [ {
+      "slotTime" : "2021-10-02 03:59",
+      "weight" : "-1000"
+    }, {
+      "slotTime" : "2021-10-02 11:50",
+      "weight" : "-13"
+    }, {
+      "slotTime" : "2021-10-02 11:55",
+      "weight" : "-3"
+    }, {
+      "slotTime" : "2021-10-02 11:59",
+      "weight" : "703"
+    }, {
+      "slotTime" : "2021-10-02 11:59",
+      "weight" : "703"
+    }, {
+      "slotTime" : "2021-10-02 12:00",
+      "weight" : "1000"
+    }, {
+      "slotTime" : "2021-10-02 13:00",
+      "weight" : "-240"
+    }, {
+      "slotTime" : "2021-10-02 13:59",
+      "weight" : "-490"
+    }, {
+      "slotTime" : "2021-10-02 15:00",
+      "weight" : "-749"
+    }, {
+      "slotTime" : "2021-10-02 15:59",
+      "weight" : "-1000"
+    }, {
+      "slotTime" : "2021-10-02 15:59",
+      "weight" : "-1000"
+    } ]
+  }, {
+    "flightId" : "FLIGHT1557",
+    "weightMap" : [ {
+      "slotTime" : "2021-10-02 03:59",
+      "weight" : "-1000"
+    }, {
+      "slotTime" : "2021-10-02 11:50",
+      "weight" : "-123"
+    }, {
+      "slotTime" : "2021-10-02 11:55",
+      "weight" : "-113"
+    }, {
+      "slotTime" : "2021-10-02 11:59",
+      "weight" : "-106"
+    }, {
+      "slotTime" : "2021-10-02 11:59",
+      "weight" : "-106"
+    }, {
+      "slotTime" : "2021-10-02 12:00",
+      "weight" : "-104"
+    }, {
+      "slotTime" : "2021-10-02 13:00",
+      "weight" : "1000"
+    }, {
+      "slotTime" : "2021-10-02 13:59",
+      "weight" : "-314"
+    }, {
+      "slotTime" : "2021-10-02 15:00",
+      "weight" : "-662"
+    }, {
+      "slotTime" : "2021-10-02 15:59",
+      "weight" : "-1000"
+    }, {
+      "slotTime" : "2021-10-02 15:59",
+      "weight" : "-1000"
+    } ]
+  }, {
+    "flightId" : "FLIGHT1562",
+    "weightMap" : [ {
+      "slotTime" : "2021-10-02 03:59",
+      "weight" : "-1000"
+    }, {
+      "slotTime" : "2021-10-02 11:50",
+      "weight" : "-210"
+    }, {
+      "slotTime" : "2021-10-02 11:55",
+      "weight" : "-202"
+    }, {
+      "slotTime" : "2021-10-02 11:59",
+      "weight" : "-195"
+    }, {
+      "slotTime" : "2021-10-02 11:59",
+      "weight" : "-195"
+    }, {
+      "slotTime" : "2021-10-02 12:00",
+      "weight" : "-193"
+    }, {
+      "slotTime" : "2021-10-02 13:00",
+      "weight" : "-93"
+    }, {
+      "slotTime" : "2021-10-02 13:59",
+      "weight" : "1000"
+    }, {
+      "slotTime" : "2021-10-02 15:00",
+      "weight" : "-493"
+    }, {
+      "slotTime" : "2021-10-02 15:59",
+      "weight" : "-1000"
+    }, {
+      "slotTime" : "2021-10-02 15:59",
+      "weight" : "-1000"
+    } ]
+  }, {
+    "flightId" : "FLIGHT1563",
+    "weightMap" : [ {
+      "slotTime" : "2021-10-02 03:59",
+      "weight" : "-1000"
+    }, {
+      "slotTime" : "2021-10-02 11:50",
+      "weight" : "-1000"
+    }, {
+      "slotTime" : "2021-10-02 11:55",
+      "weight" : "-276"
+    }, {
+      "slotTime" : "2021-10-02 11:59",
+      "weight" : "-270"
+    }, {
+      "slotTime" : "2021-10-02 11:59",
+      "weight" : "-270"
+    }, {
+      "slotTime" : "2021-10-02 12:00",
+      "weight" : "-268"
+    }, {
+      "slotTime" : "2021-10-02 13:00",
+      "weight" : "-177"
+    }, {
+      "slotTime" : "2021-10-02 13:59",
+      "weight" : "-87"
+    }, {
+      "slotTime" : "2021-10-02 15:00",
+      "weight" : "1000"
+    }, {
+      "slotTime" : "2021-10-02 15:59",
+      "weight" : "-1000"
+    }, {
+      "slotTime" : "2021-10-02 15:59",
+      "weight" : "-1000"
+    } ]
+  }, {
+    "flightId" : "FLIGHT1564",
+    "weightMap" : [ {
+      "slotTime" : "2021-10-02 03:59",
+      "weight" : "-1000"
+    }, {
+      "slotTime" : "2021-10-02 11:50",
+      "weight" : "-1000"
+    }, {
+      "slotTime" : "2021-10-02 11:55",
+      "weight" : "-335"
+    }, {
+      "slotTime" : "2021-10-02 11:59",
+      "weight" : "-329"
+    }, {
+      "slotTime" : "2021-10-02 11:59",
+      "weight" : "-329"
+    }, {
+      "slotTime" : "2021-10-02 12:00",
+      "weight" : "-328"
+    }, {
+      "slotTime" : "2021-10-02 13:00",
+      "weight" : "-244"
+    }, {
+      "slotTime" : "2021-10-02 13:59",
+      "weight" : "-162"
+    }, {
+      "slotTime" : "2021-10-02 15:00",
+      "weight" : "-77"
+    }, {
+      "slotTime" : "2021-10-02 15:59",
+      "weight" : "1000"
+    }, {
+      "slotTime" : "2021-10-02 15:59",
+      "weight" : "1000"
+    } ]
+  }, {
+    "flightId" : "FLIGHT1565",
+    "weightMap" : [ {
+      "slotTime" : "2021-10-02 03:59",
+      "weight" : "-1000"
+    }, {
+      "slotTime" : "2021-10-02 11:50",
+      "weight" : "-1000"
+    }, {
+      "slotTime" : "2021-10-02 11:55",
+      "weight" : "-335"
+    }, {
+      "slotTime" : "2021-10-02 11:59",
+      "weight" : "-329"
+    }, {
+      "slotTime" : "2021-10-02 11:59",
+      "weight" : "-329"
+    }, {
+      "slotTime" : "2021-10-02 12:00",
+      "weight" : "-328"
+    }, {
+      "slotTime" : "2021-10-02 13:00",
+      "weight" : "-244"
+    }, {
+      "slotTime" : "2021-10-02 13:59",
+      "weight" : "-161"
+    }, {
+      "slotTime" : "2021-10-02 15:00",
+      "weight" : "-76"
+    }, {
+      "slotTime" : "2021-10-02 15:59",
+      "weight" : "1000"
+    }, {
+      "slotTime" : "2021-10-02 15:59",
+      "weight" : "1000"
+    } ]
+  } ]
+} ]

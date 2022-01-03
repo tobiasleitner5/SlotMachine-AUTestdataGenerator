@@ -1,0 +1,268 @@
+{
+  "optimization": {
+    "regulationId": "regulation1",
+    "requestReceptionTime": "2021-11-19 10:59",
+    "requestId": "50bd7d02-f656-4039-81d2-38ac205fd93f",
+    "optimizationId": "657aeb40-3572-4d76-82bf-a7b99a53d427",
+    "state": "WAIT_FOR_INPUTS",
+    "currentServerTime": "2021-11-19 11:03",
+    "cutOffTime": "2001-11-19 10:59",
+    "nextOptimizationRun": "2031-11-19 10:59"
+  },
+  "slots": [
+    {
+      "slotTime": "2021-10-02 03:59"
+    },
+    {
+      "slotTime": "2021-10-02 11:59"
+    },
+    {
+      "slotTime": "2021-10-02 11:50"
+    },
+    {
+      "slotTime": "2021-10-02 12:00"
+    },
+    {
+      "slotTime": "2021-10-02 11:59"
+    },
+    {
+      "slotTime": "2021-10-02 11:55"
+    },
+    {
+      "slotTime": "2021-10-02 13:00"
+    },
+    {
+      "slotTime": "2021-10-02 13:59"
+    },
+    {
+      "slotTime": "2021-10-02 15:00"
+    },
+    {
+      "slotTime": "2021-10-02 15:59"
+    },
+    {
+      "slotTime": "2021-10-02 15:59"
+    }
+  ],
+  "flights": [
+    {
+      "flightId": "FLIGHT1553",
+      "keys": {
+        "aircraftId": "AIR198K",
+        "aerodromeOfDeparture": "ABFL",
+        "nonICAOAerodromeOfDeparture": false,
+        "airFiled": false,
+        "aerodromeOfDestination": "DESA",
+        "nonICAOAerodromeOfDestination": false,
+        "estimatedOffBlockTime": "2021-10-02 06:20"
+      },
+      "scheduledTakeOffTime": "2021-10-02 06:37",
+      "estimatedTakeOffTime": "2021-10-02 06:37",
+      "aircraftOperator": "AIR",
+      "operatingAircraftOperator": "AIR",
+      "slotIssued": true,
+      "delay": 0,
+      "mostPenalisingRegulation": "mostPR1",
+      "filedRegistrationMark": "FRIOF",
+      "slotSwapCounter": {
+        "currentCounter": 0,
+        "maxLimit": 3
+      }
+    },
+    {
+      "flightId": "FLIGHT1557",
+      "keys": {
+        "aircraftId": "AIU3854",
+        "aerodromeOfDeparture": "ABFL",
+        "nonICAOAerodromeOfDeparture": false,
+        "airFiled": false,
+        "aerodromeOfDestination": "DESC",
+        "nonICAOAerodromeOfDestination": false,
+        "estimatedOffBlockTime": "2021-10-02 05:10"
+      },
+      "scheduledTakeOffTime": "2021-10-02 07:35",
+      "estimatedTakeOffTime": "2021-10-02 05:25",
+      "aircraftOperator": "AIR",
+      "operatingAircraftOperator": "AIR",
+      "slotIssued": true,
+      "delay": 0,
+      "mostPenalisingRegulation": "mostPR2",
+      "filedRegistrationMark": "FRIOK",
+      "slotSwapCounter": {
+        "currentCounter": 0,
+        "maxLimit": 3
+      }
+    },
+    {
+      "flightId": "FLIGHT1558",
+      "keys": {
+        "aircraftId": "AIR19T",
+        "aerodromeOfDeparture": "ABFL",
+        "nonICAOAerodromeOfDeparture": false,
+        "airFiled": false,
+        "aerodromeOfDestination": "DESD",
+        "nonICAOAerodromeOfDestination": false,
+        "estimatedOffBlockTime": "2021-10-02 05:20"
+      },
+      "estimatedTakeOffTime": "2021-10-02 05:40",
+      "aircraftOperator": "AIR",
+      "operatingAircraftOperator": "AIR",
+      "delay": 0,
+      "filedRegistrationMark": "FRIOM",
+      "slotSwapCounter": {
+        "currentCounter": 0,
+        "maxLimit": 3
+      }
+    },
+    {
+      "flightId": "FLIGHT1559",
+      "keys": {
+        "aircraftId": "AIT9715",
+        "aerodromeOfDeparture": "ABFL",
+        "nonICAOAerodromeOfDeparture": false,
+        "airFiled": false,
+        "aerodromeOfDestination": "DESE",
+        "nonICAOAerodromeOfDestination": false,
+        "estimatedOffBlockTime": "2021-10-02 05:30"
+      },
+      "estimatedTakeOffTime": "2021-10-02 05:49",
+      "aircraftOperator": "AIR",
+      "operatingAircraftOperator": "AIR",
+      "delay": 0,
+      "filedRegistrationMark": "FRIOO",
+      "slotSwapCounter": {
+        "currentCounter": 0,
+        "maxLimit": 3
+      }
+    },
+    {
+      "flightId": "FLIGHT1560",
+      "keys": {
+        "aircraftId": "AIV1985",
+        "aerodromeOfDeparture": "ABFL",
+        "nonICAOAerodromeOfDeparture": false,
+        "airFiled": false,
+        "aerodromeOfDestination": "EDDG",
+        "nonICAOAerodromeOfDestination": false,
+        "estimatedOffBlockTime": "2021-10-02 05:45"
+      },
+      "scheduledTakeOffTime": "2021-10-02 06:14",
+      "estimatedTakeOffTime": "2021-10-02 06:00",
+      "aircraftOperator": "AIR",
+      "operatingAircraftOperator": "AIR",
+      "slotIssued": true,
+      "delay": 14,
+      "mostPenalisingRegulation": "mostPR3",
+      "filedRegistrationMark": "FRIOQ",
+      "slotSwapCounter": {
+        "currentCounter": 0,
+        "maxLimit": 3
+      }
+    },
+    {
+      "flightId": "FLIGHT1561",
+      "keys": {
+        "aircraftId": "AIS19SQ",
+        "aerodromeOfDeparture": "ABFL",
+        "nonICAOAerodromeOfDeparture": false,
+        "airFiled": false,
+        "aerodromeOfDestination": "DESG",
+        "nonICAOAerodromeOfDestination": false,
+        "estimatedOffBlockTime": "2021-10-02 05:45"
+      },
+      "estimatedTakeOffTime": "2021-10-02 06:00",
+      "aircraftOperator": "AIR",
+      "operatingAircraftOperator": "AIR",
+      "delay": 0,
+      "filedRegistrationMark": "FRIOU",
+      "slotSwapCounter": {
+        "currentCounter": 0,
+        "maxLimit": 3
+      }
+    },
+    {
+      "flightId": "FLIGHT1562",
+      "keys": {
+        "aircraftId": "AIR109V",
+        "aerodromeOfDeparture": "ABFL",
+        "nonICAOAerodromeOfDeparture": false,
+        "airFiled": false,
+        "aerodromeOfDestination": "DESH",
+        "nonICAOAerodromeOfDestination": false,
+        "estimatedOffBlockTime": "2021-10-02 11:35"
+      },
+      "estimatedTakeOffTime": "2021-10-02 11:50",
+      "aircraftOperator": "AIR",
+      "operatingAircraftOperator": "AIR",
+      "delay": 0,
+      "filedRegistrationMark": "FRIOV",
+      "slotSwapCounter": {
+        "currentCounter": 0,
+        "maxLimit": 3
+      }
+    },
+    {
+      "flightId": "FLIGHT1563",
+      "keys": {
+        "aircraftId": "AIR1952",
+        "aerodromeOfDeparture": "ABFL",
+        "nonICAOAerodromeOfDeparture": false,
+        "airFiled": false,
+        "aerodromeOfDestination": "DESJ",
+        "nonICAOAerodromeOfDestination": false,
+        "estimatedOffBlockTime": "2021-10-22 11:40"
+      },
+      "estimatedTakeOffTime": "2021-10-02 11:55",
+      "aircraftOperator": "AIR",
+      "operatingAircraftOperator": "AIR",
+      "delay": 0,
+      "filedRegistrationMark": "FRIOW",
+      "slotSwapCounter": {
+        "currentCounter": 0,
+        "maxLimit": 3
+      }
+    },
+    {
+      "flightId": "FLIGHT1564",
+      "keys": {
+        "aircraftId": "AIR798X",
+        "aerodromeOfDeparture": "ABFL",
+        "nonICAOAerodromeOfDeparture": false,
+        "airFiled": false,
+        "aerodromeOfDestination": "DESI",
+        "nonICAOAerodromeOfDestination": false,
+        "estimatedOffBlockTime": "2021-10-02 11:40"
+      },
+      "estimatedTakeOffTime": "2021-10-02 11:55",
+      "aircraftOperator": "AIR",
+      "operatingAircraftOperator": "AIR",
+      "delay": 0,
+      "filedRegistrationMark": "FRIOX",
+      "slotSwapCounter": {
+        "currentCounter": 0,
+        "maxLimit": 3
+      }
+    },
+    {
+      "flightId": "FLIGHT1565",
+      "keys": {
+        "aircraftId": "AIR62XW",
+        "aerodromeOfDeparture": "ABFL",
+        "nonICAOAerodromeOfDeparture": false,
+        "airFiled": false,
+        "aerodromeOfDestination": "DESK",
+        "nonICAOAerodromeOfDestination": false,
+        "estimatedOffBlockTime": "2021-10-02 11:40"
+      },
+      "estimatedTakeOffTime": "2021-10-02 11:55",
+      "aircraftOperator": "AIR",
+      "operatingAircraftOperator": "AIR",
+      "delay": 0,
+      "filedRegistrationMark": "FRIOY",
+      "slotSwapCounter": {
+        "currentCounter": 0,
+        "maxLimit": 3
+      }
+    }
+  ]
+}

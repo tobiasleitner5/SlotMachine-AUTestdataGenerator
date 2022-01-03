@@ -1,0 +1,12 @@
+{
+  "weightMapElementGenerator": "testdatagenerator.WeightMapElementGeneratorLinear",
+  "maxMarginWindowLength": 500,
+  "minMarginWindowLength": 400,
+  "marginDerivation": "FPFS",
+  "prioritySettings": [
+    [0,100,1.0,1.0]
+  ],
+  "minValue": -1000,
+  "maxValue": 1000,
+  "dropValue": 6
+}
