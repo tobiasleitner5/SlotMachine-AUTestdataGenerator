@@ -9,28 +9,28 @@
       "weight" : "-1000"
     }, {
       "slotTime" : "2021-10-02 11:50",
-      "weight" : "1000"
+      "weight" : "-462"
     }, {
       "slotTime" : "2021-10-02 11:55",
-      "weight" : "-5"
+      "weight" : "-472"
     }, {
       "slotTime" : "2021-10-02 11:59",
-      "weight" : "-22"
+      "weight" : "-481"
     }, {
       "slotTime" : "2021-10-02 11:59",
-      "weight" : "-22"
+      "weight" : "-481"
     }, {
       "slotTime" : "2021-10-02 12:00",
-      "weight" : "-26"
+      "weight" : "-483"
     }, {
       "slotTime" : "2021-10-02 13:00",
-      "weight" : "-270"
+      "weight" : "-613"
     }, {
       "slotTime" : "2021-10-02 13:59",
-      "weight" : "-511"
+      "weight" : "-740"
     }, {
       "slotTime" : "2021-10-02 15:00",
-      "weight" : "-759"
+      "weight" : "-872"
     }, {
       "slotTime" : "2021-10-02 15:59",
       "weight" : "-1000"
@@ -45,28 +45,28 @@
       "weight" : "-1000"
     }, {
       "slotTime" : "2021-10-02 11:50",
-      "weight" : "-2"
+      "weight" : "-415"
     }, {
       "slotTime" : "2021-10-02 11:55",
-      "weight" : "1000"
+      "weight" : "-426"
     }, {
       "slotTime" : "2021-10-02 11:59",
-      "weight" : "0"
+      "weight" : "-436"
     }, {
       "slotTime" : "2021-10-02 11:59",
-      "weight" : "0"
+      "weight" : "-436"
     }, {
       "slotTime" : "2021-10-02 12:00",
-      "weight" : "-4"
+      "weight" : "-438"
     }, {
       "slotTime" : "2021-10-02 13:00",
-      "weight" : "-254"
+      "weight" : "-579"
     }, {
       "slotTime" : "2021-10-02 13:59",
-      "weight" : "-500"
+      "weight" : "-718"
     }, {
       "slotTime" : "2021-10-02 15:00",
-      "weight" : "-754"
+      "weight" : "-861"
     }, {
       "slotTime" : "2021-10-02 15:59",
       "weight" : "-1000"
@@ -81,28 +81,28 @@
       "weight" : "-1000"
     }, {
       "slotTime" : "2021-10-02 11:50",
-      "weight" : "-10"
+      "weight" : "-377"
     }, {
       "slotTime" : "2021-10-02 11:55",
-      "weight" : "38"
+      "weight" : "-390"
     }, {
       "slotTime" : "2021-10-02 11:59",
-      "weight" : "1000"
+      "weight" : "-400"
     }, {
       "slotTime" : "2021-10-02 11:59",
-      "weight" : "1000"
+      "weight" : "-400"
     }, {
       "slotTime" : "2021-10-02 12:00",
-      "weight" : "759"
+      "weight" : "-402"
     }, {
       "slotTime" : "2021-10-02 13:00",
-      "weight" : "-241"
+      "weight" : "-552"
     }, {
       "slotTime" : "2021-10-02 13:59",
-      "weight" : "-491"
+      "weight" : "-700"
     }, {
       "slotTime" : "2021-10-02 15:00",
-      "weight" : "-749"
+      "weight" : "-852"
     }, {
       "slotTime" : "2021-10-02 15:59",
       "weight" : "-1000"
@@ -117,28 +117,28 @@
       "weight" : "-1000"
     }, {
       "slotTime" : "2021-10-02 11:50",
-      "weight" : "-10"
+      "weight" : "-126"
     }, {
       "slotTime" : "2021-10-02 11:55",
-      "weight" : "0"
+      "weight" : "-143"
     }, {
       "slotTime" : "2021-10-02 11:59",
-      "weight" : "1000"
+      "weight" : "-157"
     }, {
       "slotTime" : "2021-10-02 11:59",
-      "weight" : "1000"
+      "weight" : "-157"
     }, {
       "slotTime" : "2021-10-02 12:00",
-      "weight" : "737"
+      "weight" : "-161"
     }, {
       "slotTime" : "2021-10-02 13:00",
-      "weight" : "-242"
+      "weight" : "-371"
     }, {
       "slotTime" : "2021-10-02 13:59",
-      "weight" : "-491"
+      "weight" : "-578"
     }, {
       "slotTime" : "2021-10-02 15:00",
-      "weight" : "-750"
+      "weight" : "-792"
     }, {
       "slotTime" : "2021-10-02 15:59",
       "weight" : "-1000"
@@ -153,28 +153,28 @@
       "weight" : "-1000"
     }, {
       "slotTime" : "2021-10-02 11:50",
-      "weight" : "-13"
+      "weight" : "-45"
     }, {
       "slotTime" : "2021-10-02 11:55",
-      "weight" : "-3"
+      "weight" : "-35"
     }, {
       "slotTime" : "2021-10-02 11:59",
-      "weight" : "703"
+      "weight" : "-27"
     }, {
       "slotTime" : "2021-10-02 11:59",
-      "weight" : "703"
+      "weight" : "-27"
     }, {
       "slotTime" : "2021-10-02 12:00",
-      "weight" : "1000"
+      "weight" : "-25"
     }, {
       "slotTime" : "2021-10-02 13:00",
-      "weight" : "-240"
+      "weight" : "-184"
     }, {
       "slotTime" : "2021-10-02 13:59",
-      "weight" : "-490"
+      "weight" : "-453"
     }, {
       "slotTime" : "2021-10-02 15:00",
-      "weight" : "-749"
+      "weight" : "-731"
     }, {
       "slotTime" : "2021-10-02 15:59",
       "weight" : "-1000"
@@ -189,28 +189,28 @@
       "weight" : "-1000"
     }, {
       "slotTime" : "2021-10-02 11:50",
-      "weight" : "-123"
+      "weight" : "-69"
     }, {
       "slotTime" : "2021-10-02 11:55",
-      "weight" : "-113"
+      "weight" : "-59"
     }, {
       "slotTime" : "2021-10-02 11:59",
-      "weight" : "-106"
+      "weight" : "-51"
     }, {
       "slotTime" : "2021-10-02 11:59",
-      "weight" : "-106"
+      "weight" : "-51"
     }, {
       "slotTime" : "2021-10-02 12:00",
-      "weight" : "-104"
+      "weight" : "-49"
     }, {
       "slotTime" : "2021-10-02 13:00",
-      "weight" : "1000"
+      "weight" : "-131"
     }, {
       "slotTime" : "2021-10-02 13:59",
-      "weight" : "-314"
+      "weight" : "-417"
     }, {
       "slotTime" : "2021-10-02 15:00",
-      "weight" : "-662"
+      "weight" : "-713"
     }, {
       "slotTime" : "2021-10-02 15:59",
       "weight" : "-1000"
@@ -225,28 +225,28 @@
       "weight" : "-1000"
     }, {
       "slotTime" : "2021-10-02 11:50",
-      "weight" : "-210"
+      "weight" : "-1000"
     }, {
       "slotTime" : "2021-10-02 11:55",
-      "weight" : "-202"
+      "weight" : "-72"
     }, {
       "slotTime" : "2021-10-02 11:59",
-      "weight" : "-195"
+      "weight" : "-65"
     }, {
       "slotTime" : "2021-10-02 11:59",
-      "weight" : "-195"
+      "weight" : "-65"
     }, {
       "slotTime" : "2021-10-02 12:00",
-      "weight" : "-193"
+      "weight" : "-63"
     }, {
       "slotTime" : "2021-10-02 13:00",
-      "weight" : "-93"
+      "weight" : "-99"
     }, {
       "slotTime" : "2021-10-02 13:59",
-      "weight" : "1000"
+      "weight" : "-396"
     }, {
       "slotTime" : "2021-10-02 15:00",
-      "weight" : "-493"
+      "weight" : "-703"
     }, {
       "slotTime" : "2021-10-02 15:59",
       "weight" : "-1000"
@@ -261,28 +261,28 @@
       "weight" : "-1000"
     }, {
       "slotTime" : "2021-10-02 11:50",
-      "weight" : "-1000"
+      "weight" : "-103"
     }, {
       "slotTime" : "2021-10-02 11:55",
-      "weight" : "-276"
+      "weight" : "-93"
     }, {
       "slotTime" : "2021-10-02 11:59",
-      "weight" : "-270"
+      "weight" : "-86"
     }, {
       "slotTime" : "2021-10-02 11:59",
-      "weight" : "-270"
+      "weight" : "-86"
     }, {
       "slotTime" : "2021-10-02 12:00",
-      "weight" : "-268"
+      "weight" : "-84"
     }, {
       "slotTime" : "2021-10-02 13:00",
-      "weight" : "-177"
+      "weight" : "-40"
     }, {
       "slotTime" : "2021-10-02 13:59",
-      "weight" : "-87"
+      "weight" : "-356"
     }, {
       "slotTime" : "2021-10-02 15:00",
-      "weight" : "1000"
+      "weight" : "-683"
     }, {
       "slotTime" : "2021-10-02 15:59",
       "weight" : "-1000"
@@ -300,31 +300,31 @@
       "weight" : "-1000"
     }, {
       "slotTime" : "2021-10-02 11:55",
-      "weight" : "-335"
+      "weight" : "-307"
     }, {
       "slotTime" : "2021-10-02 11:59",
-      "weight" : "-329"
+      "weight" : "-301"
     }, {
       "slotTime" : "2021-10-02 11:59",
-      "weight" : "-329"
+      "weight" : "-301"
     }, {
       "slotTime" : "2021-10-02 12:00",
-      "weight" : "-328"
+      "weight" : "-300"
     }, {
       "slotTime" : "2021-10-02 13:00",
-      "weight" : "-244"
+      "weight" : "-212"
     }, {
       "slotTime" : "2021-10-02 13:59",
-      "weight" : "-162"
+      "weight" : "-127"
     }, {
       "slotTime" : "2021-10-02 15:00",
-      "weight" : "-77"
+      "weight" : "-38"
     }, {
       "slotTime" : "2021-10-02 15:59",
-      "weight" : "1000"
+      "weight" : "-1000"
     }, {
       "slotTime" : "2021-10-02 15:59",
-      "weight" : "1000"
+      "weight" : "-1000"
     } ]
   }, {
     "flightId" : "FLIGHT1565",
@@ -336,31 +336,31 @@
       "weight" : "-1000"
     }, {
       "slotTime" : "2021-10-02 11:55",
-      "weight" : "-335"
+      "weight" : "-318"
     }, {
       "slotTime" : "2021-10-02 11:59",
-      "weight" : "-329"
+      "weight" : "-313"
     }, {
       "slotTime" : "2021-10-02 11:59",
-      "weight" : "-329"
+      "weight" : "-313"
     }, {
       "slotTime" : "2021-10-02 12:00",
-      "weight" : "-328"
+      "weight" : "-311"
     }, {
       "slotTime" : "2021-10-02 13:00",
-      "weight" : "-244"
+      "weight" : "-225"
     }, {
       "slotTime" : "2021-10-02 13:59",
-      "weight" : "-161"
+      "weight" : "-141"
     }, {
       "slotTime" : "2021-10-02 15:00",
-      "weight" : "-76"
+      "weight" : "-54"
     }, {
       "slotTime" : "2021-10-02 15:59",
-      "weight" : "1000"
+      "weight" : "-1000"
     }, {
       "slotTime" : "2021-10-02 15:59",
-      "weight" : "1000"
+      "weight" : "-1000"
     } ]
   } ]
 } ]

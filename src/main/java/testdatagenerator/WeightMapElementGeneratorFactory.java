@@ -5,7 +5,11 @@ import org.slf4j.LoggerFactory;
 
 public class WeightMapElementGeneratorFactory {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(WeightMapElementGenerator.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(WeightMapElementGeneratorFactory.class);
+
+    private WeightMapElementGeneratorFactory(){
+        super();
+    }
 
     public static WeightMapElementGenerator createWeightMapGenerator(String type){
         switch (type){

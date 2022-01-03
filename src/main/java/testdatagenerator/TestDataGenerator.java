@@ -7,10 +7,8 @@ import org.slf4j.LoggerFactory;
 import connectivity.JsonOutputWriter;
 
 import java.io.IOException;
-import java.time.Duration;
 import java.time.LocalDateTime;
 import java.time.ZoneId;
-import java.time.temporal.ChronoUnit;
 import java.util.*;
 
 public class TestDataGenerator {
@@ -22,111 +20,22 @@ public class TestDataGenerator {
 		super();
 	}
 
-	public static WeightMapElement[] generateTestData(TestDataConfigDTO testDataConfigDTO, FlightListDTO flightListDTO) {
+	public static WeightMapElement[] generateTestData(TestDataConfigDTO testDataConfigDTO, FlightListDTO flightListDTO) throws IOException {
 		List<SlotDTO> slotList = flightListDTO.getSlots();
 		List<FlightDTO> flightList = flightListDTO.getFlights();
 		addMissingScheduledTime(flightList);
 		slotList.sort(Comparator.comparing(SlotDTO::getSlotTime));
 		flightList.sort(Comparator.comparing(FlightDTO::getScheduledTakeOffTime));
-		//checks
-		try {
-			checkInputs(testDataConfigDTO, flightListDTO, slotList, flightList);
-		} catch (IOException e) {
-			e.printStackTrace();
-			System.exit(99);
-		}
+		// Checks
+		checkInputs(testDataConfigDTO, flightListDTO, slotList, flightList);
 		LOGGER.info("Generating margins...");
-		List<MarginEntry> margins = generateMargins(testDataConfigDTO, slotList, flightList); //while weightMap == null or counter > 3 ... system.exit
+		MarginGenerator marginGenerator = MarginGeneratorFactory.createMarginGenerator(testDataConfigDTO.getMarginDerivation());
+		List<MarginEntry> margins = marginGenerator.generateMargins(testDataConfigDTO, slotList, flightList, random); //while weightMap == null or counter > 3 ... system.exit
 		LOGGER.info("Margins created successfully.");
 		LOGGER.info("Generating Weight Map...");
 		WeightMapElement[] weightMap = generateWeightMapElements(margins, testDataConfigDTO, flightList, slotList);
-		JsonOutputWriter.writeToFile("./OutputTest.json", weightMap);
 		LOGGER.info("Weight Map created successfully.");
 		return weightMap;
-	}
-
-
-	/**
-	 * FPFS: For every flight.scheduledTime the difference between all available slottimes is calculated and the nearest slot is assigned to the flights
-	 * with usage of the first planned first serve strategy.
-	 * @return
-	 */
-	private static List<MarginEntry> generateMargins(TestDataConfigDTO testDataConfigDTO, List<SlotDTO> slotList, List<FlightDTO> flightList) {
-		List<MarginEntry> margins = new ArrayList<>();
-		switch (testDataConfigDTO.getMarginDerivation()) {
-			case FPFS -> {
-				List<SlotDTO> internSlotList = new ArrayList<>(slotList);
-				Map<SlotDTO, FlightDTO> mapping = new HashMap<>();
-				for (FlightDTO f : flightList) {
-					List<Long> diffs = new ArrayList<>();
-					for (int i = 0; i < internSlotList.size(); i++) {
-						SlotDTO slotDTO = internSlotList.get(i);
-						if (slotDTO.getSlotTime().isBefore(f.getScheduledTakeOffTime())) {
-							diffs.add(Long.MIN_VALUE);
-							continue;
-						}
-						long minutes = ChronoUnit.MINUTES.between(f.getScheduledTakeOffTime(), slotDTO.getSlotTime());
-						diffs.add(minutes);
-					}
-					//Find minimum diff
-					long min = Long.MAX_VALUE;
-					int index = 0;
-					boolean set = false;
-					for (int i = 0; i < diffs.size(); i++) {
-						if (diffs.get(i) < min && diffs.get(i) >= 0) { // Hard Constraint: time wished needs to be after scheduled time
-							min = diffs.get(i);
-							index = i;
-							set = true;
-						}
-					}
-					if (!set) {
-						LOGGER.error("Not VALID!");
-					}
-					mapping.put(internSlotList.get(index), f);
-					internSlotList.remove(index);
-				}
-				int i = 0;
-				for (Map.Entry<SlotDTO, FlightDTO> entry : mapping.entrySet()) {
-					int marginWindow = random.nextInt(testDataConfigDTO.getMaxMarginWindowLength() - testDataConfigDTO.getMinMarginWindowLength() + 1) + testDataConfigDTO.getMinMarginWindowLength();
-					String flightId = entry.getValue().getFlightId();
-					LocalDateTime scheduledTime = entry.getValue().getScheduledTakeOffTime();
-					LocalDateTime timeWished = entry.getKey().getSlotTime();
-					LocalDateTime timeNotBefore = timeWished.minusSeconds(marginWindow / 2);
-					LocalDateTime timeNotAfter = timeWished.plusSeconds(marginWindow / 2);
-					double priority = getCurrentPriority(testDataConfigDTO.getPrioritySettings(), i, flightList.size());
-					MarginEntry marginEntry = new MarginEntry(flightId, scheduledTime, timeNotBefore, timeWished, timeNotAfter, priority);
-					margins.add(marginEntry);
-					i++;
-				}
-			}
-			case RANDOM -> {
-				LocalDateTime end = slotList.get(slotList.size()-1).getSlotTime();
-				int i = 0;
-				for (FlightDTO f : flightList) {
-					int marginWindow = random.nextInt(testDataConfigDTO.getMaxMarginWindowLength() - testDataConfigDTO.getMinMarginWindowLength() + 1) + testDataConfigDTO.getMinMarginWindowLength();
-					LocalDateTime scheduledTime = f.getScheduledTakeOffTime();
-					Duration duration = Duration.between(scheduledTime, end);
-					int seconds = (int) duration.getSeconds();
-					int randomSeconds = random.nextInt(seconds - 0+ 1) + 0;
-					String flightId = f.getFlightId();
-					LocalDateTime timeWished = f.getScheduledTakeOffTime().plusSeconds(randomSeconds);
-					LocalDateTime timeNotBefore = timeWished.minusSeconds(marginWindow / 2);
-					LocalDateTime timeNotAfter = timeWished.plusSeconds(marginWindow / 2);
-					double priority = getCurrentPriority(testDataConfigDTO.getPrioritySettings(), i, flightList.size());
-					MarginEntry marginEntry = new MarginEntry(flightId, scheduledTime, timeNotBefore, timeWished, timeNotAfter, priority);
-					margins.add(marginEntry);
-					i++;
-				}
-			}
-		}
-		margins.sort(Comparator.comparing(MarginEntry::getTimeWished));
-		//Hard Constraint: Time not before must be greater than scheduled time
-		for(MarginEntry m :margins){
-			if(m.getTimeNotBefore().isBefore(m.getScheduledTime())){
-				m.setTimeNotBefore(m.getScheduledTime());
-			}
-		}
-		return margins;
 	}
 
 	/**
@@ -143,25 +52,6 @@ public class TestDataGenerator {
 				f.setScheduledTakeOffTime(f.getEstimatedTakeOffTime());
 			}
 		}
-	}
-
-	private static double getCurrentPriority(double[][] priority, int i, int size) {
-		double currentPriority = 1.0;
-		for (int k = 0; k < priority.length; k++) {
-			double currentLocation = ((double)(i)/(double)(size)) * 100; // 20 -> at 20%
-			if (currentLocation < priority[k][1] && currentLocation >= priority[k][0]) {
-				OptionalDouble od = random.doubles(priority[k][2], priority[k][3] + 1E-10).findFirst();
-				try {
-					currentPriority = od.getAsDouble();
-				} catch (Exception e) {
-					// if no value is present use lower value
-					currentPriority = priority[k][2];
-				}
-				return currentPriority;
-			}
-
-		}
-		return currentPriority;
 	}
 
 	/**
@@ -200,11 +90,11 @@ public class TestDataGenerator {
 				throw new IOException("Not enough possible slots for the flights.");
 			}
 		}
-		LOGGER.error("All inputs are OK.");
+		LOGGER.info("All inputs are OK.");
 	}
 
 	private static boolean checkAndReadConfig(TestDataConfigDTO testDataConfigDTO){
-		if(!testDataConfigDTO.getMarginDerivation().equals(MarginDerivation.FPFS) && !testDataConfigDTO.getMarginDerivation().equals(MarginDerivation.RANDOM)){
+		if(!testDataConfigDTO.getMarginDerivation().equals("testdatagenerator.MarginGeneratorFPFS") && !testDataConfigDTO.getMarginDerivation().equals("testdatagenerator.MarginGeneratorRandom")){
 			LOGGER.error("Distribution Settings: FPFS or RANDOM.");
 			return false;
 		}

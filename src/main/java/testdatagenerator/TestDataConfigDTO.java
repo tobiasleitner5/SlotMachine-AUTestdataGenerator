@@ -6,17 +6,17 @@ public class TestDataConfigDTO {
 	private String weightMapElementGenerator;
 	private int maxMarginWindowLength; // in seconds
 	private int minMarginWindowLength;
-	private MarginDerivation marginDerivation;
+	private String marginDerivation;
 	private double[][] prioritySettings;
 	private int minValue;
 	private int maxValue;
 	private int dropValue;
 
-	public MarginDerivation getMarginDerivation() {
+	public String getMarginDerivation() {
 		return marginDerivation;
 	}
 
-	public void setMarginDerivation(MarginDerivation marginDerivation) {
+	public void setMarginDerivation(String marginDerivation) {
 		this.marginDerivation = marginDerivation;
 	}
 
