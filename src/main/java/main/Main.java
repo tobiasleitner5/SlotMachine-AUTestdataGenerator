@@ -10,15 +10,17 @@ import connectivity.TestDataGeneratorConnector;
 import testdatagenerator.TestDataConfigDTO;
 import testdatagenerator.TestDataGenerator;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
 public class Main {
 
-    public static void main (String [] args){
+    public static void main (String [] args) throws IOException {
 
+        ControllerClient controllerClient = new ControllerClient();
         RegulationRegistrationDTO registrationDTO = JsonInput.readRegistration("config/registration.json");
-        FlightListDTO flightListDTO = JsonInput.readFlightList("config/flightlist.json");
+        FlightListDTO flightListDTO = controllerClient.getFligthList(registrationDTO.getAirlineId(), registrationDTO.getAirportId());
         RegulationNotificationDTO regulationNotificationDTO = new RegulationNotificationDTO();
         regulationNotificationDTO.setAirlineId("SWR");
         regulationNotificationDTO.setAirportId("LSZH");
