@@ -21,11 +21,11 @@ public class MarginGeneratorFPFS implements MarginGenerator{
                 List<Long> diffs = new ArrayList<>();
                 for (int i = 0; i < internSlotList.size(); i++) {
                     SlotDTO slotDTO = internSlotList.get(i);
-                    if (slotDTO.getSlotTime().isBefore(f.getScheduledTakeOffTime())) {
+                    if (slotDTO.getSlotTime().isBefore(f.getCalculatedTakeOffTime())) {
                         diffs.add(Long.MIN_VALUE);
                         continue;
                     }
-                    long minutes = ChronoUnit.MINUTES.between(f.getScheduledTakeOffTime(), slotDTO.getSlotTime());
+                    long minutes = ChronoUnit.MINUTES.between(f.getCalculatedTakeOffTime(), slotDTO.getSlotTime());
                     diffs.add(minutes);
                 }
                 //Find minimum diff
@@ -49,7 +49,7 @@ public class MarginGeneratorFPFS implements MarginGenerator{
             for (Map.Entry<SlotDTO, FlightDTO> entry : mapping.entrySet()) {
                 int marginWindow = random.nextInt(testDataConfigDTO.getMaxMarginWindowLength() - testDataConfigDTO.getMinMarginWindowLength() + 1) + testDataConfigDTO.getMinMarginWindowLength();
                 String flightId = entry.getValue().getFlightId();
-                LocalDateTime scheduledTime = entry.getValue().getScheduledTakeOffTime();
+                LocalDateTime scheduledTime = entry.getValue().getCalculatedTakeOffTime();
                 LocalDateTime timeWished = entry.getKey().getSlotTime();
                 LocalDateTime timeNotBefore = timeWished.minusSeconds(marginWindow / 2);
                 LocalDateTime timeNotAfter = timeWished.plusSeconds(marginWindow / 2);

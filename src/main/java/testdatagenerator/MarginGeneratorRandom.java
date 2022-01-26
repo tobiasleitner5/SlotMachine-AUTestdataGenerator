@@ -16,12 +16,12 @@ public class MarginGeneratorRandom implements MarginGenerator{
         int i = 0;
         for (FlightDTO f : flightList) {
             int marginWindow = random.nextInt(testDataConfigDTO.getMaxMarginWindowLength() - testDataConfigDTO.getMinMarginWindowLength() + 1) + testDataConfigDTO.getMinMarginWindowLength();
-            LocalDateTime scheduledTime = f.getScheduledTakeOffTime();
+            LocalDateTime scheduledTime = f.getCalculatedTakeOffTime();
             Duration duration = Duration.between(scheduledTime, end);
             int seconds = (int) duration.getSeconds();
             int randomSeconds = random.nextInt(seconds + 1);
             String flightId = f.getFlightId();
-            LocalDateTime timeWished = f.getScheduledTakeOffTime().plusSeconds(randomSeconds);
+            LocalDateTime timeWished = f.getCalculatedTakeOffTime().plusSeconds(randomSeconds);
             LocalDateTime timeNotBefore = timeWished.minusSeconds(marginWindow / 2);
             LocalDateTime timeNotAfter = timeWished.plusSeconds(marginWindow / 2);
             double priority = MarginGenerator.getCurrentPriority(testDataConfigDTO.getPrioritySettings(), i, flightList.size(), random);

@@ -25,7 +25,7 @@ public class TestDataGenerator {
 		List<FlightDTO> flightList = flightListDTO.getFlights();
 		addMissingScheduledTime(flightList);
 		slotList.sort(Comparator.comparing(SlotDTO::getSlotTime));
-		flightList.sort(Comparator.comparing(FlightDTO::getScheduledTakeOffTime));
+		flightList.sort(Comparator.comparing(FlightDTO::getCalculatedTakeOffTime));
 		// Checks
 		checkInputs(testDataConfigDTO, flightListDTO, slotList, flightList);
 		LOGGER.info("Generating margins...");
@@ -48,8 +48,8 @@ public class TestDataGenerator {
 	 */
 	private static void addMissingScheduledTime(List<FlightDTO> flightList){
 		for(FlightDTO f : flightList){
-			if(f.getScheduledTakeOffTime() == null){
-				f.setScheduledTakeOffTime(f.getEstimatedTakeOffTime());
+			if(f.getCalculatedTakeOffTime() == null){
+				f.setCalculatedTakeOffTime(f.getEstimatedTakeOffTime());
 			}
 		}
 	}
@@ -65,7 +65,7 @@ public class TestDataGenerator {
 
 		for (int i = 0; i < flightList.size(); i++) {
 			String flightId = flightList.get(i).getFlightId();
-			LocalDateTime scheduledTime = flightList.get(i).getScheduledTakeOffTime();
+			LocalDateTime scheduledTime = flightList.get(i).getCalculatedTakeOffTime();
 			MarginEntry marginEntry = margins.get(i);
 			weightMapElements[i] = generateWeightMapElement(flightId, scheduledTime, marginEntry, slotList, tdgConfig);
 		}
@@ -86,7 +86,7 @@ public class TestDataGenerator {
 			throw new IOException("FlightList is not valid (More flights than slots).");
 		}
 		for(int i = 0; i < slotList.size(); i++){
-			if(slotList.get(i).getSlotTime().isBefore(flightList.get(0).getScheduledTakeOffTime()) && slotList.size() - flightList.size() < i+1){
+			if(slotList.get(i).getSlotTime().isBefore(flightList.get(0).getCalculatedTakeOffTime()) && slotList.size() - flightList.size() < i+1){
 				throw new IOException("Not enough possible slots for the flights.");
 			}
 		}
